@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 40px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container #logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header .container #logo span {
+  color: #234EE3;
+}
+header .container .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 82px;
+}
+header .container .nav-list li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header .container .nav-list li a:hover {
+  letter-spacing: 2px;
+  text-decoration: underline;
+  transition: 1s ease-in-out;
+}
+header .container #dropdown {
+  position: relative;
+}
+header .container #dropdown .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+header .container #dropdown .select-clicked {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+header .container #dropdown .select:hover {
+  background: linear-gradient(22deg, rgb(35, 78, 227) 39%, rgb(255, 255, 255) 95%);
+}
+header .container #dropdown .caret {
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-left: 6px solid #000;
+  transition: 0.3s;
+}
+header .container #dropdown .caret-rotate {
+  transform: rotate(90deg);
+}
+header .container #dropdown .menu {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  border: 1px solid black;
+  top: 3em;
+  width: 100%;
+  z-index: 1;
+  text-transform: uppercase;
+}
+header .container #dropdown .menu li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 5px 10px 5px 10px;
+}
+header .container #dropdown .menu li:hover {
+  background: linear-gradient(22deg, rgb(35, 78, 227) 39%, rgb(255, 255, 255) 95%);
+  color: #fff;
+}
+header .container #dropdown .active {
+  background: #234EE3;
+  color: #fff;
+}
+header .container #dropdown .text-fade-in {
+  animation: textFade 300ms ease-out;
+}
+header .container #dropdown .menu-closed {
+  display: none;
+}
+header .container #dropdown .menu-open {
+  border: 1px solid #000;
+}
+@keyframes textFade {
+  0% {
+    transform: translateX(-16px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main .hero {
+  position: relative;
+  padding-top: 20px;
+  margin-left: 200px;
+}
+.main .hero #sphere-1 {
+  position: absolute;
+  background: linear-gradient(22deg, rgb(35, 78, 227) 39%, rgb(255, 255, 255) 95%);
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 8%;
+  height: 12%;
+  left: 9%;
+  top: 15%;
+  animation: sphere1Animation 4s linear infinite;
+}
+@keyframes sphere1Animation {
+  50% {
+    top: 0;
+  }
+}
+.main .hero #sphere-2 {
+  position: absolute;
+  background: linear-gradient(22deg, rgb(35, 78, 227) 39%, rgb(255, 255, 255) 95%);
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  right: 90%;
+  animation: sphere2Animation 4s linear infinite;
+}
+@keyframes sphere2Animation {
+  50% {
+    transform: translate(50px, -100px);
+  }
+}
+.main .hero #sphere-3 {
+  position: absolute;
+  background: linear-gradient(22deg, rgb(35, 78, 227) 39%, rgb(255, 255, 255) 95%);
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 80%;
+  top: 12%;
+  left: 43%;
+}
+.main .hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .hero .container .left-col {
+  width: 50%;
+}
+.main .hero .container .left-col h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+  width: 100%;
+  max-width: 544px;
+}
+.main .hero .container .left-col h1 span {
+  color: #234EE3;
+  width: 100%;
+  max-width: 544px;
+}
+.main .hero .container .left-col p {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding-bottom: 50px;
+  max-width: 500px;
+}
+.main .hero .container .left-col .btn-wrapper {
+  max-width: 411.7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .hero .container .left-col .btn-wrapper #cv {
+  padding: 16px 22px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+.main .hero .container .left-col .btn-wrapper #cv:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.main .hero .container .left-col .btn-wrapper #hire {
+  background: #234EE3;
+  padding: 16px 22px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main .hero .container .left-col .btn-wrapper #hire:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.main .hero .container .right-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .hero .container .right-col img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  margin-right: 150px;
+  width: 100%;
+  max-width: 433px;
+}/*# sourceMappingURL=main.css.map */
