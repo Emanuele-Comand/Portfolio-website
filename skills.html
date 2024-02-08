@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN TYPE JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/skilssmin.css">
+    <title>Emanuele Comand - Skills</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/index.html" id="logo">emanuele<span>.</span></a>
+            <ul class="nav-list">
+                <li>
+                    <a href="/aboutMe.html" id="about-me">About me</a>
+                </li>
+                <li>
+                    <a href="/skills.html" id="skills">Skills</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+            </ul>
+            <div id="dropdown">
+                <div class="select">
+                <img src="/home/src/icons/united-kingdom-flag-icon.svg" alt="" height="20">
+                    <span class="selected">eng</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="active"><img src="/home/src/icons/united-kingdom-flag-icon.svg" alt="" height="20">eng</li>
+                    <li><img src="/home/src/icons/italy-flag-icon.svg" alt="" height="20">ita</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Here are my <span id="typed_skills"></span></h1>
+            <p>Click on one of the icons</p>
+            <canvas id="carousel"></canvas>
+        </div>
+    </main>
+    
+    <!-- LINK TYPE JS -->
+    <script type="module" src="/home/src/scripts/type_skills.js"></script>
+    <!-- LINK JS / THREE JS -->
+    <script type="module" src="/home/src/scripts/skills.js"></script>
+</body>
+</html>

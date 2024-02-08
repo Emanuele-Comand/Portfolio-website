@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/css/aboutMemin.css">
+    <!-- CDN TYPE JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Emanuele Comand - About me</title>
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <header>
+        <nav class="container">
+            <a href="/index.html" id="logo">emanuele<span>.</span></a>
+            <ul class="nav-list">
+                <li>
+                    <a href="" id="about-me">About me</a>
+                </li>
+                <li>
+                    <a href="/skills.html">Skills</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+            </ul>
+            <div id="dropdown">
+                <div class="select">
+                <img src="/home/src/icons/united-kingdom-flag-icon.svg" alt="" height="20">
+                    <span class="selected">eng</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="active"><img src="/home/src/icons/united-kingdom-flag-icon.svg" alt="" height="20">eng</li>
+                    <li><img src="/home/src/icons/italy-flag-icon.svg" alt="" height="20">ita</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero"> 
+        <div class="container">    
+            <h1>Hi, I'm <span id="typed_name"></span></h1>
+            <p>I am an aspirant ui/ux designer and front-end developer. I love to translate ideas into code!</p>
+            <div class="profile-image">
+                <img src="/home/src/images/avatar5849174812.jpg" alt="">
+            </div>
+            <div class="columns-container">
+                <div class="left-col-1">
+                    <div class="front">
+                        <h2>i<span> was</span></h2>
+                    </div>
+                    <div class="back">
+                        <p>Born in Udine, I graduate in 2018 as a tourism technichian. But since i was a child i loved computers and i have always been intrigued by the world of software developement.</p>
+                    </div>
+                </div>
+                <div class="right-col-1">
+                    <canvas id="computer"></canvas>
+                </div>
+            </div>
+            <div class="columns-container-2">
+                <div class="left-col-2">
+                    <canvas id="industrial-robot"></canvas>
+                </div>
+                <div class="right-col-2">
+                    <div class="front">
+                        <h2>so<span> i</span></h2>
+                    </div>
+                    <div class="back">
+                        <p>started a course with Enaip Fvg about industrial automation and industrial management thechniques, where i made a crash course for the C# language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-container-3">
+                <div class="left-col-3">
+                    <div class="front">
+                        <h2>intrigued<span> by</span></h2>
+                    </div>
+                    <div class="back">
+                        <p>a possible carrer as a developer, i tried to find my way into this world and when i discovered the field of web development, i was absolutely astonished by it.</p>
+                    </div>
+                </div>
+                <div class="right-col-3">
+                    <canvas id="web"></canvas>
+                </div>
+            </div>
+            <div class="columns-container-4">
+                <div class="left-col-4">
+                    <canvas id="html"></canvas>
+                </div>
+                <div class="right-col-4">
+                    <div class="front">
+                        <h2>this is<span> how</span></h2>
+                    </div>
+                    <div class="back">
+                        <p>I started to study web development about a year ago, starting with the basics of html and css.
+                            Then i tried to find a course that could help me to improve my skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns-container-5">
+                <div class="left-col-5">
+                    <div class="front">
+                        <h2>and <span> that's</span></h2>
+                    </div>
+                    <div class="back">
+                        <p>How i started The Jr. Full Stack Designer course with Consorzio Friuli Formazione in October of 2023. Since then i have been practicing html and css even more and more importantly i started to study javascript.</p>
+                    </div>
+                </div>
+                <div class="right-col-5">
+                    <canvas id="diploma"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- LINK TYPE JS -->
+    <script type="module" src="/home/src/scripts/type_about_me.js"></script>
+    <!-- LINK JS / THREE JS -->
+    <script type="module" src="/home/src/scripts/index.js"></script>
+</body>
+</html>
