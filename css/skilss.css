@@ -7,17 +7,13 @@
 
 body {
   overflow-x: hidden;
-  background: #000;
 }
 
 #background-canvas {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1000000;
-  background-color: #000;
+  z-index: -100000000;
 }
 
 .container {
@@ -174,5 +170,5 @@ main .container #carousel {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -10000000;
+  z-index: -10;
 }/*# sourceMappingURL=skilss.css.map */
